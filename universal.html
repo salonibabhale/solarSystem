@@ -1,0 +1,124 @@
+..<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Universal </title>
+</head>
+
+<style> 
+
+
+
+.head{
+  border-style: double;
+  text-align: center;
+  border-color: yellow;
+   flex-wrap: wrap;
+   color: rgb(46, 17, 190);
+  
+}
+
+.pic{
+  padding-top: 20px;
+ color: rgb(235, 229, 229);
+ border-style: double;
+ border-color: yellow;
+display: block;
+margin: auto;
+}
+
+
+
+
+</style>
+
+
+
+<body background="back.jpeg" >
+
+  <div class="head"> 
+    
+
+    <h1>To Know about your weight in other planets please </h1>
+    <br> 
+    ENTER YOUR WEIGHT:<br>
+    
+    <input type="number" id="wgt">
+    <br>
+    <button onclick="calweight()" style="background-color: rgb(197, 25, 28);"> SUBMIT </button>
+<br> 
+<br>
+
+
+</div>
+
+<div class="pic" >
+  <img src="mercury.jpg" alt=""> 
+  <span id="mer"> </span>
+
+<img src="venus.jpg" alt="">
+<span id="ven"></span>
+
+<img src="pluto.jpg" alt="">
+<span id="plu"></span> 
+
+<img src="mars.jpg">
+<span id="ma"> </span> <br>
+
+<img src="moon.jpg">
+<span id="mo"> </span>
+
+ <img src="saturn.jpg" width="185px", height="190px">
+  <span id="sat"></span>
+           
+
+<img src="jupiter.jpg" width="185px", height="190px">
+<span id="jup"> </span>
+
+
+<img src="nepturn.jpg" width="185px", height="190px">
+<span id="nep"> </span>
+
+</div>
+
+
+    <script>
+
+function calweight(){
+var w = parseFloat(document.getElementById("wgt").value);
+
+mercury = Math.trunc(w*0.38);
+document.getElementById("mer").innerHTML =`Mercury:${mercury}kg`; 
+
+venus = Math.trunc(w*0.38);
+document.getElementById("ven").innerHTML=`Venus:${venus}kg`;
+
+pluto = Math.trunc(w*0.06);
+document.getElementById("plu").innerHTML=`Pluto:${pluto}kg`;
+
+mars = Math.trunc(w*0.38);
+document.getElementById("ma").innerHTML=`Mars:${mars}kg`;
+
+moon = Math.trunc(w*0.16);
+document.getElementById("mo").innerHTML=`Moon:${moon}kg`;
+
+jupiter = Math.trunc(w*0.16);
+document.getElementById("jup").innerHTML=`Jupiter:${jupiter}kg`;
+
+saturn = Math.trunc(w*0.16);
+document.getElementById("sat").innerHTML=`Saturn:${saturn}kg`;
+
+
+neturn = Math.trunc(w*1.12);
+document.getElementById("nep").innerHTML=`Neturn:${neturn}kg`;
+
+
+
+  }
+
+
+
+    </script>
+</body>
+</html> 
